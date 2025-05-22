@@ -6,6 +6,7 @@
 
 ## Структура проекта
 
+```
 CustomRxJavaCourseWork/
 ├── src/
 │   ├── main/
@@ -28,7 +29,7 @@ CustomRxJavaCourseWork/
 │               └── OperatorTest.java
 ├── README.md
 └── pom.xml
-
+```
 
 Проект организован по стандартной структуре Maven. Исходный код и тесты разделены по пакетам.
 Компоненты ядра (`Observable`, `Observer` и операторы) находятся в пакете `core`. 
