@@ -42,6 +42,7 @@ CustomRxJavaCourseWork/
 ### Основные компоненты:
 
 **Observable<T>**
+
 Представляет источник данных или событий. Позволяет создавать потоки с помощью метода `create()` и обрабатывать данные через цепочку операторов (`map`, `filter`, `flatMap`, `observeOn`, `subscribeOn`).
 
 - **Observer<T>**
