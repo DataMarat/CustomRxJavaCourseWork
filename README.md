@@ -46,27 +46,24 @@ CustomRxJavaCourseWork/
 Представляет источник данных или событий. Позволяет создавать потоки с помощью метода `create()` и обрабатывать данные через цепочку операторов (`map`, `filter`, `flatMap`, `observeOn`, `subscribeOn`).
 
 **Observer<T>**
-
-Интерфейс подписчика, содержащий методы:
+  
+  Интерфейс подписчика, содержащий методы:
     - `onNext(T item)` — обработка следующего элемента потока;
     - `onError(Throwable)` — обработка ошибки;
     - `onComplete()` — сигнал об окончании потока.
 
-**Disposable / DisposableObserver**
+- **Disposable / DisposableObserver**
+  Интерфейс и абстракция для отмены подписки. Позволяет прерывать получение данных на определённой стадии.
 
-Интерфейс и абстракция для отмены подписки. Позволяет прерывать получение данных на определённой стадии.
-
-**Операторы**
-
-Методы, применяемые к Observable, возвращающие новый Observable:
+- **Операторы**
+  Методы, применяемые к Observable, возвращающие новый Observable:
     - `map(Function<T, R>)` — преобразование элементов;
     - `filter(Predicate<T>)` — фильтрация элементов;
     - `flatMap(Function<T, Observable<R>>)` — разворачивание вложенных Observable;
     - `subscribeOn(Scheduler)` и `observeOn(Scheduler)` — переключение потоков выполнения.
 
-**Schedulers**
-
-Механизм управления потоками:
+- **Schedulers**
+  Механизм управления потоками:
     - `Scheduler` — интерфейс с методом `execute(Runnable)`;
     - `IOThreadScheduler` — для IO-задач (cached thread pool);
     - `ComputationScheduler` — для CPU-задач (fixed thread pool);
