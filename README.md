@@ -218,6 +218,66 @@ mvn test
 src/main/java/Main.java
 ```
 
+Пример вывода программы:
+
+```bash
+[main] INFO Main - Example 1: flatMap
+[main] INFO Main - [flatMap] Item: 10
+[main] INFO Main - [flatMap] Item: 20
+[main] INFO Main - [flatMap] Item: 20
+[main] INFO Main - [flatMap] Item: 40
+[main] INFO Main - [flatMap] Item: 30
+[main] INFO Main - [flatMap] Item: 60
+[main] INFO Main - [flatMap] Completed
+[main] INFO Main - Example 2: Error handling
+[main] INFO Main - [error] Received: A
+[main] INFO Main - [error] Received: B
+[main] WARN Main - [error] Handled: Simulated error
+[main] INFO Main - Example 3: Disposable
+[pool-3-thread-1] INFO Main - [infinite] 0
+[pool-3-thread-1] INFO Main - [infinite] 1
+[pool-3-thread-1] INFO Main - [infinite] 2
+[pool-3-thread-1] INFO Main - [infinite] 3
+[pool-3-thread-1] INFO Main - [infinite] 4
+[pool-3-thread-1] INFO Main - [infinite] 5
+[pool-3-thread-1] INFO Main - [infinite] Disposed!
+[pool-3-thread-1] INFO Main - [infinite] 6
+[pool-3-thread-1] INFO Main - [infinite] Disposed!
+[pool-3-thread-1] INFO Main - [infinite] 7
+[pool-3-thread-1] INFO Main - [infinite] Disposed!
+[pool-3-thread-1] INFO Main - [infinite] 8
+[pool-3-thread-1] INFO Main - [infinite] Disposed!
+[pool-3-thread-1] INFO Main - [infinite] 9
+[pool-3-thread-1] INFO Main - [infinite] Disposed!
+[pool-3-thread-1] INFO Main - [infinite] 10
+[pool-3-thread-1] INFO Main - [infinite] Disposed!
+[pool-3-thread-1] INFO Main - [infinite] 11
+[pool-3-thread-1] INFO Main - [infinite] Disposed!
+[pool-3-thread-1] INFO Main - [infinite] 12
+[pool-3-thread-1] INFO Main - [infinite] Disposed!
+[pool-3-thread-1] INFO Main - [infinite] 13
+[pool-3-thread-1] INFO Main - [infinite] Disposed!
+[pool-3-thread-1] INFO Main - [infinite] 14
+[pool-3-thread-1] INFO Main - [infinite] Disposed!
+[pool-3-thread-1] INFO Main - [infinite] 15
+[pool-3-thread-1] INFO Main - [infinite] Disposed!
+[pool-3-thread-1] INFO Main - [infinite] 16
+[pool-3-thread-1] INFO Main - [infinite] Disposed!
+[pool-3-thread-1] INFO Main - [infinite] 17
+[pool-3-thread-1] INFO Main - [infinite] Disposed!
+[pool-3-thread-1] INFO Main - [infinite] 18
+[pool-3-thread-1] INFO Main - [infinite] Disposed!
+[main] INFO Main - Done.
+[pool-3-thread-1] INFO Main - [infinite] 19
+[pool-3-thread-1] INFO Main - [infinite] Disposed!
+[pool-3-thread-1] INFO Main - [infinite] 20
+[pool-3-thread-1] INFO Main - [infinite] Disposed!
+[pool-3-thread-1] INFO Main - [infinite] 21
+[pool-3-thread-1] INFO Main - [infinite] Disposed!
+[pool-3-thread-1] INFO Main - [infinite] 22
+[pool-3-thread-1] INFO Main - [infinite] Disposed!
+```
+
 В нём представлены примеры использования следующих возможностей библиотеки:
 
 - оператор `flatMap`;
